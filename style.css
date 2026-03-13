@@ -1,0 +1,561 @@
+:root {
+    /* Arduino Maker Color Palette */
+    --arduino-teal: #00979D;
+    --arduino-teal-deep: #008184;
+    --arduino-teal-light: #A5F2EE;
+    --heading-color: #171E21;
+    --body-text: #2C353A;
+    --background-main: #F2F5F6;
+    --surface-white: #FFFFFF;
+
+    --arduino-yellow: #F8AD1E;
+
+    /* Spacing & Borders */
+    --container-width: 1200px;
+    --border-radius: 8px;
+    --transition-speed: 0.3s;
+    --section-padding: 6rem 0;
+    --glass-border: 1px solid rgba(0, 151, 157, 0.12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-main);
+    color: var(--body-text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--heading-color);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-speed);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Updated Card Styles */
+.glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border: var(--glass-border);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: 0 8px 32px rgba(0, 151, 157, 0.05);
+    transition: all var(--transition-speed) ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 151, 157, 0.12);
+    border: 1px solid var(--arduino-teal);
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: all var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-primary {
+    background: var(--arduino-teal-deep);
+    color: white;
+    box-shadow: 0 4px 14px rgba(0, 129, 132, 0.3);
+}
+
+.btn-primary:hover {
+    background: var(--arduino-teal);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 151, 157, 0.4);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1.5px solid var(--arduino-teal-deep);
+    color: var(--arduino-teal-deep);
+}
+
+.btn-outline:hover {
+    background: rgba(0, 129, 132, 0.05);
+    border-color: var(--arduino-teal);
+    color: var(--arduino-teal);
+    transform: translateY(-2px);
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+.py-2 {
+    padding: var(--section-padding);
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--surface-white);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--arduino-teal-deep);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.nav-links a {
+    font-weight: 600;
+    color: var(--body-text);
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+    color: var(--arduino-teal);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 2px;
+    background: var(--arduino-teal-deep);
+    transition: var(--transition-speed);
+}
+
+/* AI/Tech Accents */
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(circle at 80% 20%, rgba(165, 242, 238, 0.15), transparent),
+        radial-gradient(circle at 20% 80%, rgba(0, 151, 157, 0.08), transparent),
+        white;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(0, 151, 157, 0.1) 1.5px, transparent 1.5px);
+    background-size: 40px 40px;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.hero-content {
+    flex: 1;
+    z-index: 2;
+}
+
+/* Updated Section Padding */
+.py-2 {
+    padding: 6rem 0;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: var(--heading-color);
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: var(--body-text);
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+}
+
+/* Countdown */
+.countdown-container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3.5rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.5);
+    border: var(--glass-border);
+    border-radius: var(--border-radius);
+    width: fit-content;
+    box-shadow: 0 10px 30px rgba(0, 151, 157, 0.04);
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-width: 90px;
+}
+
+.countdown-item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -1rem;
+    top: 10%;
+    font-size: 2rem;
+    color: var(--arduino-teal-deep);
+    opacity: 0.3;
+}
+
+.countdown-item span {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--arduino-teal-deep);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.countdown-item label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    color: var(--body-text);
+    opacity: 0.7;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-img {
+    max-width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections & Grids */
+.section-title {
+    font-size: 2.25rem;
+    margin-bottom: 3rem;
+    color: var(--heading-color);
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.resp-img {
+    max-width: 100%;
+    border-radius: var(--border-radius);
+}
+
+/* Participation Section Styles */
+#participate {
+    background-color: var(--background-main) !important;
+}
+
+#participate .glass-card {
+    border-radius: 8px;
+    border: 1px solid rgba(0, 151, 157, 0.1);
+}
+
+#participate i {
+    transition: transform 0.3s ease;
+}
+
+#participate .glass-card:hover i {
+    transform: scale(1.1) rotate(5deg);
+    color: var(--arduino-teal-deep) !important;
+}
+
+#participate h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.schedule-item {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    background: white;
+    border-left: 5px solid var(--arduino-teal);
+    margin-bottom: 2rem;
+    padding: 2.5rem;
+}
+
+.feature-break {
+    border-left-color: var(--arduino-yellow);
+    background: rgba(248, 173, 30, 0.03);
+}
+
+.schedule-time {
+    font-weight: 700;
+    color: var(--arduino-teal-deep);
+    min-width: 100px;
+    font-size: 1.2rem;
+    padding-top: 5px;
+}
+
+.schedule-content h3 {
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+}
+
+.schedule-content ul {
+    list-style-type: none;
+    margin-bottom: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.schedule-content ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--body-text);
+}
+
+.schedule-content ul li::before {
+    content: '•';
+    color: var(--arduino-teal);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.highlight-box {
+    background: rgba(0, 151, 157, 0.05);
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-left: 3px solid var(--arduino-teal-deep);
+    font-size: 0.95rem;
+}
+
+.outcome {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: var(--arduino-teal-deep);
+    font-style: italic;
+}
+
+.closing-quote {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--arduino-teal-deep);
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 1rem;
+}
+
+/* Learning Outcomes Section */
+.outcomes-section {
+    margin-top: 4rem;
+    background: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    border: none;
+    border-top: 5px solid var(--arduino-teal-deep);
+}
+
+.outcome-list {
+    list-style: none;
+    padding: 0;
+}
+
+.outcome-list li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.outcome-list li i {
+    color: var(--arduino-teal);
+    font-size: 1.2rem;
+}
+
+/* Gallery Section */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background: linear-gradient(transparent, rgba(23, 30, 33, 0.9));
+    color: white;
+}
+
+/* Footer Colors */
+footer {
+    background: var(--surface-white);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer .logo {
+    justify-content: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    color: var(--arduino-teal-deep);
+}
+
+.social-links a:hover {
+    color: var(--arduino-teal);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background: white;
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+        transition: height 0.3s ease;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        height: auto;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 5rem;
+        min-height: auto;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-image-container {
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    .hero-actions,
+    .countdown-container {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .schedule-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}

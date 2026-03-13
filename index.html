@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino Day 2026 | Celebrate the Maker Community</title>
+    <meta name="description"
+        content="Join the global celebration of Arduino's birthday. Explore workshops, talks, and amazing maker projects.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon"
+        href="https://cdn.arduino.cc/header-footer/prod/assets/favicon-arduino/favicon.ico">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar glass-card">
+        <div class="container nav-content">
+            <div class="logo">
+                <img src="https://days.arduino.cc/images/AD2026.svg" alt="Arduino Day 2026" style="height: 40px;">
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact" class="btn btn-outline">Register Now</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">Arduino Day 2026</h1>
+            <p class="hero-subtitle">March 27-28th, 2026 — A Global Celebration of Makers, Hardware, and Creativity.</p>
+
+            <div id="countdown" class="countdown-container glass-card">
+                <div class="countdown-item">
+                    <span id="days">00</span>
+                    <label>Days</label>
+                </div>
+                <div class="countdown-item">
+                    <span id="hours">00</span>
+                    <label>Hours</label>
+                </div>
+                <div class="countdown-item">
+                    <span id="minutes">00</span>
+                    <label>Minutes</label>
+                </div>
+                <div class="countdown-item">
+                    <span id="seconds">00</span>
+                    <label>Seconds</label>
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <a href="#schedule" class="btn btn-primary">Explore Schedule</a>
+                <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <img src="assets/robot-hand.png" alt="Arduino Robot" class="hero-img">
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-2">
+        <div class="container grid-2">
+            <div class="about-text">
+                <h2 class="section-title">What is Arduino Day?</h2>
+                <p>Arduino Day is a worldwide birthday celebration of Arduino. It's a 24-hour-long event—organized
+                    directly by the community, or by the Arduino team—that brings people together to share their
+                    experiences and learn more about the open-source platform.</p>
+                <div class="stats grid-2 my-2">
+                    <div class="glass-card">
+                        <h3>100+</h3>
+                        <p>Workshops</p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>5000+</h3>
+                        <p>Attendees</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image glass-card" style="padding: 0; overflow: hidden;">
+                <img src="assets/arduino-workshop.png" alt="Makers Workspace" class="resp-img"
+                    style="display: block; width: 100%; height: 100%; object-fit: cover;">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Schedule Section (MakerGuru Update) -->
+    <section id="schedule" class="py-2">
+        <div class="container">
+            <h2 class="section-title text-center" style="margin-bottom: 1rem;">Code with MakerGuru</h2>
+            <p class="text-center" style="margin-bottom: 3rem; font-size: 1.1rem; color: var(--body-text);">A Hands-On
+                Workshop & Live Demo Experience @ Maker Bhavan, IIT Gandhinagar</p>
+
+            <div class="schedule-container">
+                <!-- Session 1 -->
+                <div class="schedule-item glass-card">
+                    <div class="schedule-time">10:00 AM</div>
+                    <div class="schedule-content">
+                        <h3>Welcome & Arduino Day Introduction</h3>
+                        <ul>
+                            <li>What is Arduino Day?</li>
+                            <li>What is Open Hardware?</li>
+                            <li>Why Arduino changed the world of electronics</li>
+                            <li>Introduction to Makerspace IITGN Community</li>
+                        </ul>
+                        <p class="outcome"><strong>Outcome:</strong> Participants understand the global impact of
+                            Arduino and open innovation.</p>
+                    </div>
+                </div>
+
+                <!-- Session 2 -->
+                <div class="schedule-item glass-card">
+                    <div class="schedule-time">10:15 AM</div>
+                    <div class="schedule-content">
+                        <h3>Live Demo 1 – Meet Your First Arduino</h3>
+                        <ul>
+                            <li>Introduction to Arduino Board</li>
+                            <li>Understanding pins (Digital, Analog, Power)</li>
+                            <li>What is a microcontroller?</li>
+                            <li>Connecting Arduino to computer & Installing Arduino IDE</li>
+                        </ul>
+                        <div class="highlight-box">
+                            <strong>Live Demo:</strong> Uploading the “Blink” Program. Participants see their first LED
+                            blink — the iconic Arduino moment.
+                        </div>
+                        <p class="outcome"><strong>Outcome:</strong> Participants understand how code interacts with
+                            hardware.</p>
+                    </div>
+                </div>
+
+                <!-- Session 3 -->
+                <div class="schedule-item glass-card">
+                    <div class="schedule-time">10:45 AM</div>
+                    <div class="schedule-content">
+                        <h3>Hands-On Coding Session – Code Your First Project</h3>
+                        <p>Participants (individually or in small teams):</p>
+                        <ul>
+                            <li>Write and upload LED blink code</li>
+                            <li>Modify delay timing</li>
+                            <li>Add push button input & Create simple ON/OFF logic</li>
+                        </ul>
+                        <div class="highlight-box">
+                            <strong>Challenge Task:</strong> “Can you control the LED using a button?”
+                        </div>
+                        <p class="outcome"><strong>Outcome:</strong> Understand digital I/O, learn basic C/C++
+                            structure, and build confidence in debugging.</p>
+                    </div>
+                </div>
+
+                <!-- Session 4 -->
+                <div class="schedule-item glass-card feature-break">
+                    <div class="schedule-time">11:30 AM</div>
+                    <div class="schedule-content">
+                        <h3>Break & Open Interaction</h3>
+                        <ul>
+                            <li>Informal discussion</li>
+                            <li>Display of Arduino-based projects</li>
+                            <li>Q&A with MakerGuru mentors</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Session 5 -->
+                <div class="schedule-item glass-card">
+                    <div class="schedule-time">11:45 AM</div>
+                    <div class="schedule-content">
+                        <h3>Live Demo 2 – Sensors & Intelligence</h3>
+                        <p>Demonstration of Ultrasonic, Temperature, and Light sensors, plus a Servo motor.</p>
+                        <div class="highlight-box">
+                            <strong>Live Example:</strong> Distance-based obstacle detection & Automatic light control
+                            system.
+                        </div>
+                        <p class="outcome"><strong>Outcome:</strong> Participants understand how sensors make systems
+                            “smart”.</p>
+                    </div>
+                </div>
+
+                <!-- Session 6 -->
+                <div class="schedule-item glass-card">
+                    <div class="schedule-time">12:15 PM</div>
+                    <div class="schedule-content">
+                        <h3>Mini Build Challenge – Code to Solve</h3>
+                        <p>Participants will build a line follower robot using an Arduino board.</p>
+                        <p class="outcome"><strong>Outcome:</strong> Apply coding knowledge, experience rapid
+                            prototyping, and strengthen problem-solving.</p>
+                    </div>
+                </div>
+
+                <!-- Session 7 -->
+                <div class="schedule-item glass-card">
+                    <div class="schedule-time">12:45 PM</div>
+                    <div class="schedule-content">
+                        <h3>Showcase & Closing</h3>
+                        <ul>
+                            <li>2–3 teams demonstrate their working setup</li>
+                            <li>Quick reflections: “What did you build?”</li>
+                            <li>Introduction to advanced pathways (IoT, Robotics, AI integration)</li>
+                        </ul>
+                        <p class="closing-quote">“You didn’t just learn Arduino today — you powered your first
+                            innovation.”</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Learning Outcomes -->
+            <div class="outcomes-section glass-card my-2">
+                <h3 class="text-center" style="margin-bottom: 1.5rem; color: var(--arduino-teal-deep);">Learning
+                    Outcomes</h3>
+                <p class="text-center" style="margin-bottom: 1rem;">By the end of “Code with MakerGuru”, participants
+                    will:</p>
+                <div class="grid-2" style="gap: 2rem; align-items: start;">
+                    <ul class="outcome-list">
+                        <li><i class="fas fa-check-circle"></i> Understand fundamentals of Arduino and microcontrollers
+                        </li>
+                        <li><i class="fas fa-check-circle"></i> Write and modify simple Arduino programs</li>
+                        <li><i class="fas fa-check-circle"></i> Interface sensors and actuators</li>
+                        <li><i class="fas fa-check-circle"></i> Learn debugging basics</li>
+                    </ul>
+                    <ul class="outcome-list">
+                        <li><i class="fas fa-check-circle"></i> Gain exposure to open hardware ecosystem</li>
+                        <li><i class="fas fa-check-circle"></i> Develop confidence in hardware prototyping</li>
+                        <li><i class="fas fa-check-circle"></i> Take first step toward embedded systems & IoT</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-2">
+        <div class="container">
+            <h2 class="section-title">Maker Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item glass-card">
+                    <img src="https://via.placeholder.com/600x400/00979C/FFFFFF?text=Arduino+Robot" alt="Project 1">
+                    <div class="gallery-overlay">Autonomous Rover</div>
+                </div>
+                <div class="gallery-item glass-card">
+                    <img src="https://via.placeholder.com/600x400/F8AD1E/FFFFFF?text=Smart+Home" alt="Project 2">
+                    <div class="gallery-overlay">Smart Garden System</div>
+                </div>
+                <div class="gallery-item glass-card">
+                    <img src="https://via.placeholder.com/600x400/1E232B/FFFFFF?text=Wearable+Tech" alt="Project 3">
+                    <div class="gallery-overlay">LED Neo-Jacket</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-2">
+        <div class="container text-center">
+            <div class="logo my-2">
+                <img src="https://days.arduino.cc/images/AD2026.svg" alt="Arduino Day 2026" style="height: 40px;">
+            </div>
+            <p>Join the movement. Start making today.</p>
+            <div class="social-links my-2">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="text-secondary">&copy; 2026 Arduino Day Celebration. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
